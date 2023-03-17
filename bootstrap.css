@@ -13180,3 +13180,7 @@ textarea.form-control-lg {
         display: none !important
     }
 }
+
+.tabelka tbody tr:hover {
+    background-color: rgb(105, 105, 105);
+}
