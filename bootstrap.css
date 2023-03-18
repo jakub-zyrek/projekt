@@ -13180,3 +13180,30 @@ textarea.form-control-lg {
         display: none !important
     }
 }
+
+.tabelka tbody tr:hover {
+    background-color: rgb(83, 186, 255);
+    
+}
+
+.bi-arrow-left-circle, .bi-arrow-right-circle {
+    transition: ease 0.5s;
+}
+
+.bi-arrow-left-circle:hover, .bi-arrow-right-circle:hover {
+    fill:rgb(83, 186, 255);
+    cursor: pointer;
+    align-content: center;
+}
+
+.bycz {
+    border: 1rem rgb(83, 186, 255) solid;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    height: 30vw;
+    font-size: 2.5vw;
+}

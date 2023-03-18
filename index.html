@@ -22,6 +22,8 @@
     }
 </style>
 
+
+
   </head>
   <body>
   <header class="p-3 text-bg-dark mb-3">
@@ -69,16 +71,16 @@
   <br><br>
   <div class="container w-100 text-white">
     <div class="bg-info p-2 float-start w-100 rounded-5">
-      <h3 style="padding: 2%;">Najpopularniejsze pytania</h3>
+      <h3 style="padding: 2%;">Najnowsze pytania bez odpowiedzi</h3>
       <br>
       <div class="w-100">
-        <table class="table  col-7 tabelka " style="color: rgb(255, 255, 255); font-weight: 600;">
+        <table class="table  col-7 tabelka " style="color: rgb(255, 255, 255); font-weight: 600; font-size: 1.5rem;">
           <thead  class="text-dark">
             <tr class="text-dark" >
               <th  style="font-weight: bold !important;">#</th>
               <th >Pytanie</th>
               <th >Zadał</th>
-              <th >Odpowiedzi</th>
+              <th >Odp</th>
               <th ></th>
             </tr>
           </thead>
@@ -113,24 +115,17 @@
   </div>
 
   <div class="container" style=" text-align: center; clear: both;">
-    <h2 style="text-align: center; width: 75%; margin: auto; padding-top: 5%; margin-bottom: 2%; font-weight: bolder;">Przestrzeń programistów tworzona przez programistów</h2>
-    <div style="margin: auto; " class="col-4 gwiazdki">
-      <svg xmlns="http://www.w3.org/2000/svg"  fill="#ffd000" class="bi bi-star-fill row-cols-1 col-2 col-md-1" viewBox="0 0 16 16">
-        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+    <h2 style="text-align: center; width: 80%; margin: auto; padding-top: 5%; margin-bottom: 2%; font-weight: bolder; font-size: 3rem;">Przestrzeń programistów tworzona przez programistów</h2>
+    <div style="display: flex; width: 90%; margin: auto; justify-content: space-between; " class="col-12">
+      <svg onclick="lewy(i);" xmlns="http://www.w3.org/2000/svg"  fill="black" id="bi-arrow-left-circle" class="bi bi-arrow-left-circle col-1" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
       </svg>
-      <svg xmlns="http://www.w3.org/2000/svg"  fill="#ffd000" class="bi bi-star-fill row-cols-1 col-2 col-md-1" viewBox="0 0 16 16">
-        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+      <div class=" border-info bycz">
+        <p id="ess"></p>
+      </div>
+      <svg onclick="prawy(i);" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-right-circle col-1" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
       </svg>
-      <svg xmlns="http://www.w3.org/2000/svg"  fill="#ffd000" class="bi bi-star-fill row-cols-1 col-2 col-md-1" viewBox="0 0 16 16">
-        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg"  fill="#ffd000" class="bi bi-star-fill row-cols-1 col-2 col-md-1" viewBox="0 0 16 16">
-        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="#ffd000" class="bi bi-star-half row-cols-1 col-2 col-md-1" viewBox="0 0 16 16">
-        <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
-      </svg>
-      <div class="col-1 row-cols-1 text-center mt-2">&nbsp;4,5</div>
     </div>
   </div>
     
@@ -153,5 +148,33 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script>
+
+      var i = 0;
+
+      var tab1 = ["Super! Bardzo pomocne! Ma formę jak portal społecznościowy, można zdobywać punkty, zapraszać, pomagać i dowiadywać się ciekawych rzeczy!", "Super, bo można się pytać innych ludzi o zadania, których się nie umie zrobić. Można odpowiadać na pytania innych ludzi i za to dostaje się punkty", "Epicka apka! Dużo pomagających użytkowników! POLECAM!!! ❤️", "Bardzo pomaga w lekcjach. Nie da jej się opisać słowami. Po prostu jest mega!!!"];
+  
+      function prawy(a) {
+        i = i + 1;
+        if (i > 3) {
+          i = 0;
+        }
+       
+        document.getElementById('ess').innerText = tab1[i];
+      }
+
+      function lewy(b) {
+        i = i - 1;
+        if (i < 0) {
+          i = 3;
+        }
+
+        document.getElementById('ess').innerText = tab1[i];
+        
+      }
+  
+      prawy(0);
+  </script>
   </body>
 </html>
