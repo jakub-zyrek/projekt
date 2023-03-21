@@ -17,10 +17,87 @@ var a = 0;
 
 function dzieki() {
     if (a == 0) {
-        document.getElementById('dzieki').innerText = "Podziękowałeś";
+        // document.getElementById('po').innerText = "Podziękowałeś";
+        document.getElementById("dzieki").style.backgroundColor = "#dc3545";
+        document.getElementById("dzieki").style.color = "white";
         a = 1;
     } else {
-        document.getElementById('dzieki').innerText = "Podziękuj";        
+        // document.getElementById('po').innerText = "Podziękuj";       
+        document.getElementById("dzieki").style.backgroundColor = "white";
+        document.getElementById("dzieki").style.color = "#dc3545"; 
         a = 0;
+    }
+}
+
+function dzie() {
+    document.getElementById("dzieki").style.backgroundColor = "#dc3545";
+    document.getElementById("dzieki").style.color = "white";
+}
+
+function dziek() {
+    if (a == 0) {
+        document.getElementById("dzieki").style.backgroundColor = "white";
+        document.getElementById("dzieki").style.color = "#dc3545";
+    }
+}
+
+var b = 0;
+
+function ocen() {
+    if (b == 0) {
+        document.getElementById('ocena').innerHTML = '<svg id="g1" xmlns="http://www.w3.org/2000/svg" onmouseover="jeden(1);" onmouseout="jede(1);" onclick="jed(1);" style="width: 2rem;" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg><svg id="g2" xmlns="http://www.w3.org/2000/svg"  onmouseover="jeden(2);"  onmouseout="jede(2);" onclick="jed(2);" style="width: 2rem;" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg><svg id="g3" xmlns="http://www.w3.org/2000/svg" onmouseover="jeden(3);"  onmouseout="jede(3);" onclick="jed(3);" style="width: 2rem;" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg><svg id="g4" xmlns="http://www.w3.org/2000/svg" onmouseover="jeden(4);"  onmouseout="jede(4);" onclick="jed(4);" style="width: 2rem;" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg><svg id="g5" xmlns="http://www.w3.org/2000/svg" onmouseover="jeden(5);"  onmouseout="jede(5);" onclick="jed(5);" style="width: 2rem;" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>';
+        document.getElementById("oc").style.backgroundColor = "#ffc107";
+        document.getElementById("oc").style.color = "black";
+        b = 1;
+    } else {
+        document.getElementById('ocena').innerHTML = "";
+        document.getElementById("oc").style.backgroundColor = "white";
+        document.getElementById("oc").style.color = "#ffc107";
+        b = 0;
+    }
+}
+
+function oc() {
+    document.getElementById("oc").style.backgroundColor = "#ffc107";
+    document.getElementById("oc").style.color = "black";
+}
+
+function oce() {
+    if (b == 0) {
+        document.getElementById("oc").style.backgroundColor = "white";
+        document.getElementById("oc").style.color = "#ffc107";
+    }
+}
+
+var aa = 0;
+
+function oce(g) {
+    if (aa == 0) {
+        for (var ii = 1; ii < (g+1); ii++) {
+            document.getElementById("g" + ii).style.fill = "#ffc107";
+        }
+    }
+    
+}
+
+function jede(g) {
+    if (aa == 0) {
+        for (var ii = 1; ii < (g+1); ii++) {
+            document.getElementById("g" + ii).style.fill = "black";
+        }
+    }
+}
+
+function jed(g) {
+    if (aa == 0) {
+        for (var ii = 1; ii < (g+1); ii++) {
+            document.getElementById("g" + ii).style.fill = "#ffc107";
+        }
+        aa = 1;
+    } else {
+        for (var ii = 1; ii < 6; ii++) {
+            document.getElementById("g" + ii).style.fill = "black";
+            aa = 0;
+        }
     }
 }
