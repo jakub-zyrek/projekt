@@ -13216,3 +13216,12 @@ textarea.form-control-lg {
 * {
     font-family: 'Roboto' !important;
 }
+
+.pobierz {
+    transition: 0.5s ease;
+}
+
+.pobierz:hover {
+    color: #bb2d3b;
+    cursor: pointer;
+}
