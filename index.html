@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Forum internetowe</title>
     <link href="bootstrap.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Roboto:wght@100&display=swap" rel="stylesheet">
  <style>
-  * {
-    font-family: Roboto;
-  }
+    table, thead, tbody {
+      font-size: 80%;
+      width: max-content;
+    }
+    button {
+      text-align: right;
+    }
 </style>
+
+
+
   </head>
   <body>
   <header class="p-3 text-bg-dark mb-3">
@@ -58,49 +63,67 @@
   </div>
 
   <br><br>
-  <div class="container">
-    <div class="">
-      <h3>Najpopularniejsze pytania</h3>
+  <div class="container w-100 text-white">
+    <div class="bg-info p-2 float-start w-100 rounded-5">
+      <h3 style="padding: 2%;">Najnowsze pytania bez odpowiedzi</h3>
       <br>
-      <table class="w-100 table table-info table-hover">
-        <thead  class="table-primary table-info">
-          <tr class="bg-info">
-            <th style="width: 5%;">#</th>
-            <th style="width: 50%;">Pytanie</th>
-            <th style="width: 20%;">Zadał</th>
-            <th style="width: 10%;">Odpowiedzi</th>
-            <th style="width: 10%"></th>
-          </tr>
-        </thead>
-        <tbody class="table-group-divider">
-          <tr>
-            <td>1</td>
-            <td>Jak coś tam</td>
-            <td>jakubzyrek</td>
-            <td>4</td>
-            <td><button class="btn btn-outline-info text-dark">Przejdź</button></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jak coś tam</td>
-            <td>jakubzyrek</td>
-            <td>4</td>
-            <td><button class="btn btn-outline-info text-dark">Przejdź</button></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Jak coś tam</td>
-            <td>jakubzyrek</td>
-            <td>4</td>
-            <td><button class="btn btn-outline-info text-dark">Przejdź</button></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="w-100">
+        <table class="table  col-7 tabelka " style="color: rgb(255, 255, 255); font-size: 1.5rem;">
+          <thead  class="text-dark">
+            <tr class="text-dark" >
+              <th>#</th>
+              <th>Pytanie</th>
+              <th>Zadał</th>
+              <th>Odp</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <td>1</td>
+              <td>Jak coś tam</td>
+              <td>jakubzyrek</td>
+              <td>4</td>
+              <td><button class="btn btn-outline-warning text-white">Przejdź</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jak coś tam</td>
+              <td>jakubzyrek</td>
+              <td>4</td>
+              <td><button class="btn btn-outline-warning text-white">Przejdź</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Jak coś tam</td>
+              <td>jakubzyrek</td>
+              <td>4</td>
+              <td><button class="btn btn-outline-warning text-white">Przejdź</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
     </div>
       
   </div>
+
+  <div class="container" style=" text-align: center; clear: both;">
+    <h2 style="text-align: center; width: 80%; margin: auto; padding-top: 5%; margin-bottom: 2%; font-weight: bolder; font-size: 3rem;">Przestrzeń programistów tworzona przez programistów</h2>
+    <div style="display: flex; width: 90%; margin: auto; justify-content: space-between; " class="col-12">
+      <svg onclick="lewy(i);" xmlns="http://www.w3.org/2000/svg"  fill="black" id="bi-arrow-left-circle" class="bi bi-arrow-left-circle col-1" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+      </svg>
+      <div class=" border-info bycz">
+        <p id="ess"></p>
+      </div>
+      <svg onclick="prawy(i);" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-arrow-right-circle col-1" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+      </svg>
+    </div>
+  </div>
     
-  <div class="container">
+  <div class="container float-none" style="clear:both;">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
     
@@ -119,5 +142,33 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script>
+
+      var i = 0;
+
+      var tab1 = ["Super! Bardzo pomocne! Ma formę jak portal społecznościowy, można zdobywać punkty, zapraszać, pomagać i dowiadywać się ciekawych rzeczy!", "Super, bo można się pytać innych ludzi o zadania, których się nie umie zrobić. Można odpowiadać na pytania innych ludzi i za to dostaje się punkty", "Epicka apka! Dużo pomagających użytkowników! POLECAM!!! ❤️", "Bardzo pomaga w lekcjach. Nie da jej się opisać słowami. Po prostu jest mega!!!"];
+  
+      function prawy(a) {
+        i = i + 1;
+        if (i > 3) {
+          i = 0;
+        }
+       
+        document.getElementById('ess').innerText = tab1[i];
+      }
+
+      function lewy(b) {
+        i = i - 1;
+        if (i < 0) {
+          i = 3;
+        }
+
+        document.getElementById('ess').innerText = tab1[i];
+        
+      }
+  
+      prawy(0);
+  </script>
   </body>
 </html>
