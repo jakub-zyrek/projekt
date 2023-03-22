@@ -77,18 +77,21 @@
                 </div>
                 <h4>Adres</h4>
                 <br>
-                <div style="display: flex; justify-content: space-between;" class="ms-3">
-                    <div class="col-6">
+                <div style="display: flex; justify-content: space-between; flex-wrap: wrap;" class="ms-3">
+                    <div class="col-12 col-lg-6">
                         <label for="firstName" class="form-label">Ulica</label>
                         <br>
                         <input type="text" class="form-control" id="ulica" placeholder="Ulica" style="margin-left: auto; margin-right: auto;" required>
                       </div>
-                      <div class="col-5">
+                      <div class="col-12 col-lg-5">
                           <label for="firstName" class="form-label text-start">Numer</label>
                           <br>
-                          <input type="text" class="form-control align-items-center col-4" id="firstName" placeholder="Nazwisko" required >
-                          /
-                          <input type="text" class="form-control align-items-center col-4" id="firstName" placeholder="Nazwisko" required >
+                          <div style="display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;">
+                            <input type="text" class="form-control align-items-center" id="numer" required>
+                            <span style="font-size: 1.5rem;">&nbsp;/&nbsp;</span>
+                            <input type="text" class="form-control align-items-center" id="dom">
+                          </div>
+                          
                           <br>
                       </div>
                 </div>
