@@ -6,6 +6,12 @@
     <title>Forum internetowe| Twój profil</title>
     <link href="bootstrap.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script>
+    var essa = "essa";
+    var nic = "";
+
+    var bycz = '<div class="card col-12"><div class="card-header bg-danger-subtle text-end" style="border: 0px !important;"><svg xmlns="http://www.w3.org/2000/svg" onclick="document.getElementById(essa).innerHTML = nic;"style="width: 2rem; cursor: pointer;" fill="currentColor" class="bi bi-x-square-fill" viewBox="0 0 16 16"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/></svg></div><div class="card-header bg-danger-subtle"><h2 class="p-3 text-center">Zgłoszenie nr: 2100</h2></div><div class="card-body"><p>Twoje pytanie pt. "Dlaczego Anna Gałwa przechodzi przez środek ronda" zostało zawieszone z powodu naruszenia zasad regulaminu</p></div></div>'
+  </script>
  
   </head>
   <body>
@@ -109,21 +115,45 @@
                 </div>
             </div>
 
-            <div class="card col-12 col-lg-6 mt-2" style="transition: 1s ease-out;">
+            <div class="card col-12 col-lg-4 mt-4" style="transition: 1s ease-out;">
                 <div class="card-header bg-primary-subtle">
                     <h2 class="p-3 text-center">Zdjęcie profilowe</h2>
                 </div>
-                <div class="card-body justify-content-center justify-content-lg-between" style="display: flex; flex-wrap: wrap;">
-                    <img class="rounded-circle col-8 col-lg-5" src="images/user.png" alt="user">
+                <div class="card-body justify-content-center justify-content-lg-between">
+                    <img class="rounded-circle" style="margin-left: 12.5%; width: 75%;" src="images/user.png" alt="user">
+                    <br><br>
                     <form action="" method="post" class="needs-validation" novalidate>
-                      <br><br>
-                        <input style="text-align: center;" class="col-12 btn btn-outline-primary" type="file" name="" id="">
+                        <input class="form-control col-12" type="file" name="zdjecie" accept="image/*" id="file">
                     </form>
                 </div>
             </div>
+
+            <div class="card col-12 col-lg-7 mt-3" id="card" style="transition: 1s ease-out;">
+              <div class="card-header bg-danger-subtle">
+                  <h2 class="p-3 text-center">Powiadomienia</h2>
+              </div>
+              <div class="card-body">
+                <table class="table table-hover" style="transition: 1s ease-out;">
+                  <tr>
+                      <td class="col-1">1.</td>
+                      <td class="text-danger col-10">Twoja odpowiedź została zgłoszona do administratora z powodu naruszenia regulaminu</td>
+                      <td class="col-1 text-end"><button type="button" class="btn btn-outline-warning" onclick="document.getElementById('essa').innerHTML = bycz; var a = document.getElementById('card'); document.getElementById('essa').style.top = (a.offsetTop + 20) + 'px';">Zobacz</button></td>
+                  </tr>
+                  <tr>
+                    <td class="col-1">1.</td>
+                    <td class="text-danger col-8">Twoja odpowiedź została zgłoszona do administratora z powodu naruszenia regulaminu</td>
+                    <td class="col-3 text-end"><button type="button" class="btn btn-outline-warning">Odwołaj się</button></td>
+                </tr>
+              </table>
+              </div>
+          </div>
         </div>
         
     </div>
+  </div>
+
+  <div id="essa" style="position: absolute; margin: auto; width: 80%; left: 10%; ">
+    
   </div>
 
   <div class="container">
