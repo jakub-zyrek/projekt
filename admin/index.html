@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel administratora</title>
-    <link href="./sidebars.css" rel="stylesheet">
-    <link href="./bootstrap.min.css" rel="stylesheet">
+
     <link href="./../bootstrap.css" rel="stylesheet">
 
     
 </head>
-<body class="col-12" style="display: flex;">
+<body class="col-12" style="display: flex; overflow-x: hidden;">
     <main class="d-flex flex-nowrap">
       
         <div class=" p-3 text-bg-dark col-12" style="width: 280px;">
@@ -82,7 +81,7 @@
         </main>
 
         <main class="col-10" style="background-color: gainsboro;">
-            <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: start;">
+            <div class="col-11" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: start; ">
                 <div class="col-11 col-lg-5 col-xl-4 m-3 bg-white p-2">
                     <div class="col-12 p-1" style="display: flex; align-items: center; justify-content: start; flex-wrap: nowrap; font-size: 1.5rem;">
                         <svg xmlns="http://www.w3.org/2000/svg" style="width: 2.3rem;" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -121,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-11 col-lg-6 col-xl-7 m-3 bg-white p-2">
+                <div class="col-12 col-lg-6 col-xl-7 m-3 bg-white p-2">
                     <div class="col-12 p-1" style="display: flex; align-items: center; justify-content: start; flex-wrap: nowrap; font-size: 1.5rem;">
                         <svg xmlns="http://www.w3.org/2000/svg" style="width: 2.3rem;" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
                             <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
@@ -129,6 +128,40 @@
                           </svg>
                         </svg>
                         &nbsp;&nbsp;Statystyki
+                    </div>
+                    <hr>
+                    <div class="ps-3 pb-2">
+                        <div class="p-1" style="display: flex; align-items: center; cursor: pointer; justify-content: center;">
+                            &nbsp;<svg xmlns="http://www.w3.org/2000/svg" style="width: 2.5rem;" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                            </svg>
+                              &nbsp;&nbsp;<b style="font-size: 2rem">204</b>
+                        </div>
+                        <p class="col-12 text-center">Zarejestrowanych użytkowników</p>
+                        <div class="p-1" style="display: flex; align-items: center; cursor: pointer; justify-content: center;">
+                            &nbsp;<svg xmlns="http://www.w3.org/2000/svg" style="width: 2.5rem" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                              </svg>
+                              &nbsp;&nbsp;<b style="font-size: 2rem">204</b>
+                        </div>
+                        <p class="col-12 text-center">Dodanych postów</p>
+                        <div class="p-1" style="display: flex; align-items: center; cursor: pointer; justify-content: center; color: red;">
+                            &nbsp;<svg xmlns="http://www.w3.org/2000/svg" style="width: 2.4rem;" fill="currentColor" class="bi bi-clipboard-x-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm4 7.793 1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 1 1 .708-.708L8 9.293Z"/>
+                              </svg>
+                              &nbsp;&nbsp;<b style="font-size: 2rem">204</b>
+                        </div>
+                        <p class="col-12 text-center" style="color: red;">Aktywnych zgłoszeń</p>
+                    </div>
+                </div>
+                <div class="m-3 col-11 bg-white p-2">
+                    <div class="col-12 p-1" style="display: flex; align-items: center; justify-content: start; flex-wrap: nowrap; font-size: 1.5rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width: 2.3rem;" fill="currentColor" class="bi bi-clipboard-x-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+                            <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm4 7.793 1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 1 1 .708-.708L8 9.293Z"/>
+                          </svg>
+                        &nbsp;&nbsp;Zgłoszenia
                     </div>
                     <hr>
                     <div class="ps-3 pb-2">
