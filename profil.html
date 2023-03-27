@@ -124,6 +124,8 @@
                     <br><br>
                     <form action="" method="post" class="needs-validation" novalidate>
                         <input class="form-control col-12" type="file" name="zdjecie" accept="image/*" id="file">
+                        <br>
+                        <input type="submit" value="Zatwierdź zmiany" class="form-control btn btn-outline-primary">
                     </form>
                 </div>
             </div>
@@ -147,7 +149,44 @@
               </table>
               </div>
           </div>
-        </div>
+
+
+          <div class="card col-12 mt-3" id="card" style="transition: 1s ease-out;">
+            <div class="card-header bg-dark-subtle">
+                <h2 class="p-3 text-center">Ustawienia</h2>
+            </div>
+            <div class="card-body" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+              <div class="card col-12 col-md-6 mt-3" id="card" style="transition: 1s ease-out;">
+                <div class="card-header bg-dark-subtle">
+                    <h2 class="p-3 text-center">Zmiana hasła</h2>
+                </div>
+                <div class="card-body">
+                  <form action="" method="post" class="needs-validation" novalidate>
+                    <div class="col-12" style="display: flex; justify-content: space-between; flex-wrap: nowrap;">
+                      <span class="col-2">Stare hasło:</span>
+                      <input type="password" class="form-control col-8">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="card col-12 col-md-5 mt-3" id="card" style="transition: 1s ease-out;">
+                <div class="card-header bg-dark-subtle">
+                    <h2 class="p-3 text-center">Usuwanie konta</h2>
+                </div>
+                <div class="card-body">
+                  <form action="" method="post">
+                    <p>Tej operacji nie da się odwrócić</p>
+                    <div style="display: flex; align-items: center;">
+                      <input type="checkbox" name="zgoda" id="zgoda" class="" required>&nbsp;&nbsp;<label for="zgoda">Jestem tego w pełni świadomy</label>
+                    </div>
+                    <br>
+                    <input type="submit" value="Usuń moje konto" class="btn btn-outline-danger form-control">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
         
     </div>
   </div>

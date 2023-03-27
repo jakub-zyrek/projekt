@@ -12,6 +12,12 @@
     box-shadow: none !important;
   }
 </style>
+<script>
+  var essa = "essa";
+  var nic = "";
+
+  var bycz = '<div class="card col-12"><div class="card-header bg-danger-subtle text-end" style="border: 0px !important;"><svg xmlns="http://www.w3.org/2000/svg" onclick="document.getElementById(essa).innerHTML = nic;"style="width: 2rem; cursor: pointer;" fill="currentColor" class="bi bi-x-square-fill" viewBox="0 0 16 16"><path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/></svg></div><div class="card-header bg-danger-subtle"><h2 class="p-3 text-center">Dodawanie zgłoszenia</h2></div><div class="card-body"><form>Dlaczego chcesz zgłosić tę treść?<br><br><textarea rows="3" class="form-control"></textarea><br><button type="submit" class="form-control btn btn-outline-danger">Wyślij zgłoszenie</button></form></div></div>'
+</script>
   </head>
   <body>
   <header class="p-3 text-bg-dark mb-3">
@@ -59,13 +65,22 @@
                 <p class="text-start">sdg sdg | Angielski</p>
                 <h4 class="my-0 fw-normal text-start">Ssgddgs</h4>
                 <br><br>
-                <button type="button" class="w-25 btn btn-lg btn-outline-info" style="display: flex; margin: auto; justify-content: center; align-items: center; font-size: 1rem;">
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+                  <button type="button" class="col-4 btn btn-lg btn-outline-info" style="display: flex; justify-content: center; align-items: center; font-size: 1rem;">
                     ODPOWIEDZ&nbsp;
                     <svg xmlns="http://www.w3.org/2000/svg" style="width: 1rem;" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                       </svg>
-                </button>
+                  </button>
+                  &nbsp;&nbsp;
+                  <button type="button" class="btn btn-lg btn-outline-danger col-2" style="display: flex;justify-content: center; align-items: normal; font-size: 1rem; margin-bottom: 2%; margin-top: 2%;" onclick="document.getElementById('essa').innerHTML = bycz; var a = document.getElementById('carde'); document.getElementById('essa').style.top = (a.offsetTop + a.offsetTop + a.offsetTop) + 'px';">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 1rem;" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                      <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                    </svg>
+                    &nbsp;
+                  </button>
+                </div>
               </div>
               <div class="card-body col-12 col-md-10 col-lg-8" style="margin-left: auto;">
                 <div class="col">
@@ -97,7 +112,7 @@
                         <p class="text-start">Mjjj | Polski</p>
 
                       </div>
-                      <div class="card-body" style="padding-left: 5%;">              </div>
+                      <div id="carde"  class="card-body" style="padding-left: 5%;">              </div>
                       <div class="card-footer py-2 text-start">
                         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 3%;">
                           <button type="button" onclick="dzieki();" onmouseover="dzie();" onmouseout="dziek()" id="dzieki" class="btn btn-lg btn-outline-danger" style="display: flex; margin: auto; justify-content: center; align-items: center; font-size: 1rem; margin-bottom: 2%; margin-top: 2%; flex-grow: 1;">
@@ -106,7 +121,7 @@
                             </svg>
                             &nbsp;<span id="po"></span>
                           </button>
-                          <button type="button" id="oc" onclick="ocen();" onmouseover="oc()" onmouseout="ocee();" class="btn btn-lg btn-outline-warning" style="display: flex; margin: auto; justify-content: center; align-items: normal; font-size: 1rem; margin-bottom: 2%; margin-top: 2%; flex-grow: 1; transition: 2s ease;">
+                          <button type="button" id="oc" onclick="ocen();" onmouseover="oc()" onmouseout="ocee();" class="btn btn-lg btn-outline-warning" style="display: flex; margin: auto; justify-content: center; align-items: normal; font-size: 1rem; margin-bottom: 2%; margin-top: 2%; flex-grow: 1;">
                             <svg xmlns="http://www.w3.org/2000/svg" style="width: 1rem;" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
                               <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
                             </svg>
@@ -118,6 +133,12 @@
                             </svg>
                             &nbsp;<span id="komet">Wyświetl komentarze</span>
                           </button>
+                          <button type="button" class="btn btn-lg btn-outline-danger" style="display: flex; margin: auto; justify-content: center; align-items: normal; font-size: 1rem; margin-bottom: 2%; margin-top: 2%; flex-grow: 0.2;" onclick="document.getElementById('essa').innerHTML = bycz; var a = document.getElementById('carde'); document.getElementById('essa').style.top = (a.offsetTop + a.offsetTop + a.offsetTop) + 'px';">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1rem;" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                              <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                            </svg>
+                            &nbsp;
+                          </button>
                         </div>
                         <div class="card-body col-12" id="ocena" style="margin: auto; text-align: center; transition: 2s ease;">
                           
@@ -125,6 +146,7 @@
                         <div class="card-body col-12 col-md-10" id="kome" style="margin-left: auto; transition: 2s ease;">
                           
                         </div>
+                  
                       </div>
                     </div>
                   </div>
@@ -133,7 +155,9 @@
           </div>
     </div>
 
+    <div id="essa" style="position: absolute; margin: auto; width: 80%; left: 10%;">
 
+                          </div>
   <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
